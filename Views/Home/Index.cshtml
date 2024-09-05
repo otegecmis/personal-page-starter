@@ -1,4 +1,7 @@
-﻿@{ ViewData["Title"] = "Home Page"; }
+﻿@model List<Link>
+@{
+  ViewData["Title"] = "home";
+}
 
 <p>
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis assumenda
@@ -6,3 +9,11 @@
   veritatis magni eaque ullam expedita minima similique quibusdam error ducimus
   maiores alias perspiciatis sapiente tenetur excepturi voluptates.
 </p>
+
+<h2 class="h5 mb-3">Social Media:</h2>
+<ul class="list-unstyled">
+  @foreach (var link in Model)
+  {
+    <li><a target="_blank" href="@link.URL" class="text-decoration-none">@link.Title</a></li>
+  }
+</ul>
