@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Personal.Models;
+using Personal.Repositories;
 
 namespace Personal.Controllers;
 
