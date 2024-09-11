@@ -7,6 +7,6 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
-        return View(LinkRepository.List);
+        return View(LinksRepository.List);
     }
 }

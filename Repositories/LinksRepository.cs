@@ -2,11 +2,11 @@ using Personal.Models;
 
 namespace Personal.Repositories;
 
-public class LinkRepository
+public class LinksRepository
 {
     private static readonly List<Link> links = new();
 
-    static LinkRepository()
+    static LinksRepository()
     {
         links = new List<Link>()
         {
