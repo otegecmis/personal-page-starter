@@ -1,9 +1,9 @@
-@{
-    ViewData["Title"] = "resume";
-}
+@{ ViewData["Title"] = "resume"; }
 
-<p>
-    Fugit unde molestiae, impedit libero nulla magni earum quia tempora
-    vel alias nesciunt modi asperiores omnis optio quisquam cupiditate vero error enim maxime. Similique pariatur
-    veritatis sint itaque, veniam iste soluta?
-</p>
+<p>@Model.Content</p>
+
+<div class="btn-group" role="group" aria-label="Basic outlined example">
+  <button type="button" class="btn btn-outline-success">
+    <i class="fa fa-download"></i> Download Resume
+  </button>
+</div>

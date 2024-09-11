@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Personal.Repositories;
 
 namespace Personal.Controllers;
 
@@ -6,11 +7,17 @@ public class PagesController : Controller
 {
     public IActionResult Resume()
     {
-        return View();
+        var repository = new PagesRepository();
+        var page = repository.GetByTitle("Resume");
+
+        return View(page);
     }
 
     public IActionResult Contact()
     {
-        return View();
+        var repository = new PagesRepository();
+        var page = repository.GetByTitle("Contact");
+
+        return View(page);
     }
 }
