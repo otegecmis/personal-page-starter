@@ -2,7 +2,7 @@
 
 This project is a `starter template for a personal website` built using `.NET MVC 7`.
 
-### Screenshots
+### 1. Screenshots
 
 <div style="float: left;">
     <img src="Assets/1.png" style="width: 30%;" />
@@ -12,7 +12,7 @@ This project is a `starter template for a personal website` built using `.NET MV
 
 **Note:** The following screenshots display the mobile responsive views of the website.
 
-### Installation
+### 2. Installation
 
 To install and run the project, follow these steps:
 
