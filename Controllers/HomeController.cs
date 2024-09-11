@@ -1,12 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+
 using Personal.Repositories;
 
-namespace Personal.Controllers;
-
-public class HomeController : Controller
+namespace Personal.Controllers
 {
-    public IActionResult Index()
+    public class HomeController : Controller
     {
-        return View(LinksRepository.List);
+        public IActionResult Index()
+        {
+            var links = LinksRepository.List;
+            var homePage = new PagesRepository().GetByTitle("Home");
+
+            ViewBag.Links = links;
+            ViewBag.HomePage = homePage;
+
+            return View();
+        }
     }
 }
