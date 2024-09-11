@@ -1,6 +1,16 @@
 ## Personal Page Starter
 
-This project is a `starter template for a personal websit` built using `.NET MVC 7`.
+This project is a `starter template for a personal website` built using `.NET MVC 7`.
+
+### Screenshots
+
+<div style="float: left;">
+    <img src="Assets/1.png" style="width: 30%;" />
+    <img src="Assets/2.png" style="width: 30%;" />
+    <img src="Assets/3.png" style="width: 30%;" />
+</div>
+
+**Note:** The following screenshots display the mobile responsive views of the website.
 
 ### Installation
 
